@@ -1,0 +1,55 @@
+{
+    "data": [
+        {
+            "team_id": "1",
+            "name": "TOC-ST",
+            "description": "Automation Team",
+            "admin": [
+                "nitesh12",
+                "test2",
+                "test3"
+            ],
+            "creation_time": "somdate"
+        },
+        {
+            "name": "TOC-ST-ML",
+            "description": "Team is responsible for creating automations in Tech Services",
+            "admin": [
+                "1",
+                "2"
+            ],
+            "creation_time": "2022-02-13 11:58:20.458952",
+            "team_id": "2"
+        },
+        {
+            "name": "ISE-TS",
+            "description": "Team is responsible for managing infra in UBS",
+            "admin": [
+                "1",
+                "2"
+            ],
+            "creation_time": "2022-02-13 12:03:18.573039",
+            "team_id": "3"
+        },
+        {
+            "name": "ISE-TS-Cloud",
+            "description": "Team is responsible for managing cloud infra in UBS",
+            "admin": [
+                "6",
+                "7"
+            ],
+            "creation_time": "2022-02-13 12:05:03.789928",
+            "team_id": "4"
+        },
+        {
+            "name": "IB-TECH-16",
+            "description": "HANDLES TECH OPS IN IB",
+            "admin": [
+                "10",
+                "8"
+            ],
+            "creation_time": "2022-02-13 12:05:42.003391",
+            "team_id": "5"
+        }
+    ]
+}

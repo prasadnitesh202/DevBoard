@@ -1,0 +1,114 @@
+{
+    "data": [
+        {
+            "board_id": "1",
+            "name": "TS-Automation-Enablement-1",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-12 23:21:37.641144",
+            "status": "CLOSED",
+            "task": [
+                {
+                    "taskid": "1",
+                    "title": "FirstTask",
+                    "description": "My First Task",
+                    "userId": "1",
+                    "creationtime": "SomeRandomTime",
+                    "status": "CLOSED"
+                },
+                {
+                    "taskid": "2",
+                    "title": "SecondTask",
+                    "description": "My Sec Task",
+                    "userId": "2",
+                    "creationtime": "SomeRandomTime",
+                    "status": "CLOSED"
+                },
+                {
+                    "taskid": "6",
+                    "title": "Test7",
+                    "description": "<description>",
+                    "userid": "<team id>",
+                    "creationtime": "<date:time when task was created>",
+                    "status": "IN PROGRESS"
+                }
+            ],
+            "end_time": "2022-02-13 18:06:23.902603"
+        },
+        {
+            "board_id": "2",
+            "name": "TS-Automation-Enablement-2",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-12 23:21:37.641144",
+            "status": "CLOSED",
+            "end_time": "2022-02-13 20:46:34.761219",
+            "task": [
+                {
+                    "taskid": "3",
+                    "title": "Test2",
+                    "description": "<description>",
+                    "userid": "<team id>",
+                    "creationtime": "<date:time when task was created>",
+                    "status": "OPEN"
+                }
+            ]
+        },
+        {
+            "board_id": "5",
+            "name": "TS-Automation-Enablement",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-12 23:48:40.910852"
+        },
+        {
+            "board_id": "10",
+            "name": "TS-Automation-Enablement",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-12 23:49:08.477594"
+        },
+        {
+            "board_id": "10",
+            "name": "TS-Automation-Enablement",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-13 00:27:26.897495"
+        },
+        {
+            "board_id": "11",
+            "name": "TS-Automation-Enablement-INDIA",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-13 00:42:58.881029"
+        },
+        {
+            "board_id": "11",
+            "name": "rB2JSatme2lv0zmiSgR6i1JAlPI9YaW1V3GzdJTYlibvRYmpOuAOv5jK9f7B",
+            "description": "Developers of Automations in TOC",
+            "team_id": "121",
+            "creation_time": "2022-02-13 00:49:41.709076"
+        },
+        {
+            "name": "Test",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-13 01:00:17.372437",
+            "board_id": "8"
+        },
+        {
+            "name": "Test3",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-13 01:09:05.857172",
+            "board_id": "9"
+        },
+        {
+            "name": "Test3",
+            "description": "Developers of Automations in TOC",
+            "team_id": "12",
+            "creation_time": "2022-02-13 03:28:28.988799",
+            "board_id": "10"
+        }
+    ]
+}
