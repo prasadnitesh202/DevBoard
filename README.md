@@ -15,7 +15,7 @@
 - TeamBoard.json
 
 ```json
-  - {
+  -  {
     "data": [
         {
             "board_id": "",
@@ -271,15 +271,15 @@
             * Description can be max 128 characters
 
 - list_teams()
-        :return: A json list with the response.
-        [
-          {
+
+      :return: A json list with the response.
+          [{
             "name" : "<team_name>",
             "description" : "<some description>",
             "creation_time" : "<some date:time format>",
             "admin": "<id of a user>"
-          }
-        ]
+          }]
+
 - describe_team(request)
 
         :param request: A json string with the team details
