@@ -270,7 +270,6 @@
             * Name can be max 64 characters
             * Description can be max 128 characters
 
-
 - list_teams()
         :return: A json list with the response.
         [
@@ -316,7 +315,6 @@
             * Name can be max 64 characters
             * Description can be max 128 characters
 
-
 - add_users_to_team(request)
 
         :param request: A json string with the team details
@@ -330,7 +328,6 @@
         Constraint:
         * Cap the max users that can be added to 50
 
-
 - remove_users_from_team(request)
 
         :param request: A json string with the team details
@@ -343,7 +340,6 @@
 
         Constraint:
         * Cap the max users that can be added to 50
-
 
 - list_team_users(request)
 
