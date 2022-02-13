@@ -75,7 +75,7 @@
 
 ### API Methods:
 
-- ImplProjBoardBase
+- ## ImplProjBoardBase
   - Create an object of this class and call the api methods,
   - example:  
     obj1=ImplProjBoardBase()
@@ -158,7 +158,7 @@
 
     <br> <br>
 
-- ImplUserBase
+- ## ImplUserBase
 
   - Create an object of this class and call the api methods,
   - example:  
@@ -184,16 +184,15 @@
             * name can be max 64 characters
             * display name can be max 64 characters
 
-
 - list_users(request)
-        :return: A json list with the response
-        [
-          {
-            "name" : "<user_name>",
-            "display_name" : "<display name>",
-            "creation_time" : "<some date:time format>"
-          }
-        ]
+  :return: A json list with the response
+  [
+  {
+  "name" : "<user_name>",
+  "display_name" : "<display name>",
+  "creation_time" : "<some date:time format>"
+  }
+  ]
 - describe_user(request)
 
         :param request: A json string with the user details
@@ -238,5 +237,126 @@
             "name" : "<team_name>",
             "description" : "<some description>",
             "creation_time" : "<some date:time format>"
+          }
+        ]
+        <br><br>
+
+<br><br>
+
+- ## ImplTeamBase
+
+  - Create an object of this class and call the api methods,
+  - example:  
+    obj1=ImplTeamBase()
+  - obj1.api_methods() will calL the api methods
+    <br> <br>
+
+- ### Below are the API Methods implented by this class
+
+<br>
+
+- create_team(request)
+
+        :param request: A json string with the team details
+        {
+          "name" : "<team_name>",
+          "description" : "<some description>",
+          "admin": "<id of a user>"
+        }
+        :return: A json string with the response {"id" : "<team_id>"}
+
+        Constraint:
+            * Team name must be unique
+            * Name can be max 64 characters
+            * Description can be max 128 characters
+
+
+- list_teams()
+        :return: A json list with the response.
+        [
+          {
+            "name" : "<team_name>",
+            "description" : "<some description>",
+            "creation_time" : "<some date:time format>",
+            "admin": "<id of a user>"
+          }
+        ]
+- describe_team(request)
+
+        :param request: A json string with the team details
+        {
+          "id" : "<team_id>"
+        }
+
+        :return: A json string with the response
+
+        {
+          "name" : "<team_name>",
+          "description" : "<some description>",
+          "creation_time" : "<some date:time format>",
+          "admin": "<id of a user>"
+        }
+
+- update_team(request)
+
+        :param request: A json string with the team details
+        {
+          "id" : "<team_id>",
+          "team" : {
+            "name" : "<team_name>",
+            "description" : "<team_description>",
+            "admin": "<id of a user>"
+          }
+        }
+
+        :return:
+
+        Constraint:
+            * Team name must be unique
+            * Name can be max 64 characters
+            * Description can be max 128 characters
+
+
+- add_users_to_team(request)
+
+        :param request: A json string with the team details
+        {
+          "id" : "<team_id>",
+          "users" : ["user_id 1", "user_id2"]
+        }
+
+        :return:
+
+        Constraint:
+        * Cap the max users that can be added to 50
+
+
+- remove_users_from_team(request)
+
+        :param request: A json string with the team details
+        {
+          "id" : "<team_id>",
+          "users" : ["user_id 1", "user_id2"]
+        }
+
+        :return:
+
+        Constraint:
+        * Cap the max users that can be added to 50
+
+
+- list_team_users(request)
+
+        :param request: A json string with the team identifier
+        {
+          "id" : "<team_id>"
+        }
+
+        :return:
+        [
+          {
+            "id" : "<user_id>",
+            "name" : "<user_name>",
+            "display_name" : "<display name>"
           }
         ]
